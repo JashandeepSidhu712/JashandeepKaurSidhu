@@ -1,0 +1,276 @@
+*
+{
+    user-select: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    color: white;
+    background-color: #111;
+}
+html, body
+{
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none !important;
+}
+/* /////////////// */
+/* // SCROLL BARS //// */
+/* //////////////// */
+body::-webkit-scrollbar
+{
+    width: 0.3vw;
+}
+body::-webkit-scrollbar-track 
+{
+    -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0);
+}
+body::-webkit-scrollbar-thumb 
+{
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid slategrey;
+    border-radius: 20px;
+}
+/* /////////////// */
+/* // BUTTONS //// */
+/* //////////////// */
+.btn-primary
+{
+    background-color: white !important;
+    border-color: white !important;
+    color: #111 !important;
+}
+.btn-primary:hover, .btn-outline-primary:hover
+{
+    color: #111 !important;
+    background-color: white !important;
+    border-color: white !important;
+}
+.btn-primary:focus, .btn-outline-primary:focus
+{
+    background-color: white !important;
+    box-shadow: inset 0 3px 5px white !important;
+    color: #111 !important;
+}
+.btn-primary:active, .btn-outline-primary:active
+{
+    background-color: white !important;
+    border-color: white !important;
+    box-shadow: inset 0 3px 5px white !important;
+    color: #111 !important;
+}
+.btn-outline-primary
+{
+    border-color: white !important;
+    color: #111 !important;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.nav-heading
+{
+    margin: 1vw;
+}
+.section
+{
+    height: 100vh;
+    padding: 4vw;
+    scroll-snap-align: start;
+    overflow-y: hidden;
+    /* border: 1px solid rgba(255, 255, 255, 0.355); */
+}
+.sectionCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.mainSpan
+{
+    font-size: 5vw;
+    margin: 5vw;
+    margin-top: 10vw;
+    transition: all 0.6s ease-out;
+}
+.mainPic
+{
+    border-radius: 100%;
+    width: 40%;
+    height: 40%;
+    margin: 5vw;
+    transition: all 0.6s ease-out;
+}
+.mainSpan:hover, .mainPic:hover
+{
+    transform: scale(1.1);
+    -webkit-text-stroke: 0.2vw rgba(249, 249, 249, 0.429);
+    transition: all 1s ease;
+}
+.smallSpan
+{
+    display: none;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.heading
+{
+    margin: 2vw;
+    box-shadow: rgb(255, 255, 255) !important;
+}
+.headingSpan
+{
+    font-size: 4vw;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.workCol
+{
+    margin: 1vw;
+    margin-bottom: 2vw;
+}
+.workCard
+{
+    width: 15rem;
+}
+/* ////////////////// */
+/*     PROJECTS */
+/* ///////////////// */
+.projectimg
+{
+    width: 30vw;
+    height: 30vh;
+}
+.projectp
+{
+    font-size: 1vw;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.featureCard
+{
+    width: 15rem;
+    height: 30rem;
+}
+.featurespan
+{
+    text-align: center;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.followIcons
+{
+    width: 20%;
+    transition: all 0.6s ease-out;
+}
+.followIcons:hover
+{
+    transform: scale(1.5);
+    cursor: grab;
+    transition: all 1s ease;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+.name
+{
+    opacity: 0;
+}
+.name.animated
+{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-delay: 0.15s;
+}
+#follow, #mail
+{
+    opacity: 0;
+}
+#follow.animated, #mail.animated
+{
+    opacity: 1;
+    animation-duration: 1s;
+    animation-delay: 0.15s;
+}
+.mobilepdf
+{
+    display: none;
+}
+/* ///////////////////////////////// */
+/* ////         MY WORK        //// */
+/* ///////////////////////////////// */
+@media(max-width: 480px) 
+{
+    .smallSpan
+    {
+        font-size: 10vw;
+        font-weight: 700;
+        margin: 5vw;
+        margin-top: 10vw;
+        transition: all 0.6s ease-out;
+        text-align: center;
+        display: block;
+    }
+    .smallSpan:hover
+    {
+        transform: scale(1.1);
+        -webkit-text-stroke: 0.2vw rgba(249, 249, 249, 0.429);
+        transition: all 1s ease;
+    }
+    .mainSpan
+    {
+        display: none;
+    }
+    .mainPic
+    {
+        width: 40%;
+        height: 40%;
+    }
+    .headingSpan
+    {
+        font-size: 8vw;
+    }
+    .followIcons
+    {
+        width: 25%;
+    }
+    .followIcons:hover
+    {
+        transform: scale(1.1);
+    }
+    .featureCard
+    {
+        width: 9rem;
+        height: 40rem;
+    }
+    .featurespan
+    {
+        font-size: 3.4vw;
+        text-align: center;
+    }
+    .workCol
+    {
+        margin: 3vw;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .mobilepdf
+    {
+        display: block;
+    }
+    .pcpdf
+    {
+        display: none;
+    }
+    .projectp
+    {
+        font-size: 1vw;
+    }
+}
